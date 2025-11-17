@@ -67,7 +67,11 @@
 
     <!-- BOX Data -->
     <div class="grid grid-cols-3 gap-4">
-        <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-card h-64">📊 Tren Panjang Jalan</div>
+    <!-- Tren Panjang Jalan -->
+    <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-card h-64">
+        <h2 class="font-semibold mb-2">Tren Panjang Jalan</h2>
+        <canvas id="trenJalanChart"></canvas>
+    </div>
         <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-card h-64">🟢 Status Jembatan</div>
         <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-card h-64">📈 Hasil Panen</div>
     </div>
@@ -76,4 +80,38 @@
         <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-card h-64">📋 Daftar Proyek</div>
         <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-card h-64">🗺️ Pemetaan SIG</div>
     </div>
+
+@push('scripts')
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const ctx1 = document.getElementById('trenJalanChart');
+
+    new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: ['2020','2021','2022','2023','2024','2025','2026','2027'],
+            datasets: [{
+                label: 'Panjang Jalan (KM)',
+                data: [150, 200, 260, 300, 350, 400, 450, 500],
+                backgroundColor: '#60A5FA',    // biru soft
+                borderRadius: 6,               // rounded bar
+                barThickness: 25               // ketebalan bar
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true }
+            },
+            plugins: {
+                legend: {
+                    display: false   // sembunyikan legend
+                }
+            }
+        }
+    });
+});
+</script>
+@endpush
+
 @endsection
