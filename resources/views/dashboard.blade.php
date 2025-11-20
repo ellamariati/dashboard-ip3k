@@ -92,7 +92,50 @@
 
 <!-- DATA BOX BAWAH-->
     <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-10">
-        <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-lg h-64">📋 Daftar Proyek</div>
+    <!-- Daftar Proyek -->
+<div class="bg-[#E3F2FD] rounded-xl shadow-lg p-5 w-full ">
+  <h2 class="text-lg font-semibold mb-4">Daftar Proyek</h2>
+
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm border-collapse">
+      <thead class="bg-blue-50">
+        <tr class="text-left">
+          <th class="px-4 py-2 font-medium border border-gray-300">Nama Proyek</th>
+          <th class="px-4 py-2 font-medium border border-gray-300">OPD</th>
+          <th class="px-4 py-2 font-medium border border-gray-300">Status</th>
+          <th class="px-4 py-2 font-medium border border-gray-300">Capaian</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-4 py-2 border border-gray-300">Pembangunan Jalan A</td>
+          <td class="px-4 py-2 border border-gray-300">Panaga</td>
+          <td class="px-4 py-2 border border-gray-300 text-yellow-600 font-semibold">Sedang Berjalan</td>
+          <td class="px-4 py-2 border border-gray-300 font-semibold">78.00%</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border border-gray-300">Rehebilitasi Jembatan X</td>
+          <td class="px-4 py-2 border border-gray-300">Gafas</td>
+          <td class="px-4 py-2 border border-gray-300 text-green-600 font-semibold">Selesai</td>
+          <td class="px-4 py-2 border border-gray-300 font-semibold">65.00%</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border border-gray-300">Pengembangan Lahan Y</td>
+          <td class="px-4 py-2 border border-gray-300">Banu</td>
+          <td class="px-4 py-2 border border-gray-300 text-red-600 font-semibold">Tertunda</td>
+          <td class="px-4 py-2 border border-gray-300 font-semibold">30.00%</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 border border-gray-300">Pembangunan Klinik Z</td>
+          <td class="px-4 py-2 border border-gray-300">Cinric</td>
+          <td class="px-4 py-2 border border-gray-300 text-yellow-600 font-semibold">Sedang Berjalan</td>
+          <td class="px-4 py-2 border border-gray-300 font-semibold">38.00%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
         <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-lg h-64">🗺️ Pemetaan SIG</div>
     </div>
 
@@ -163,6 +206,8 @@ new Chart(ctx2, {
         cutout: '65%'
     }
 });
+
+// Chart 3 - Line
 const ctx = document.getElementById('hasilPanenChart').getContext('2d');
 
 new Chart(ctx, {
