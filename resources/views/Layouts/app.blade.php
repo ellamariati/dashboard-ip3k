@@ -9,7 +9,7 @@
 <body class="bg-gray-100 font-sans antialiased">
     <div class="flex">
         {{-- Sidebar --}}
-        <aside class="w-64 bg-blue-900 text-white min-h-screen p-">
+        <aside class="fixed w-64 bg-blue-900 text-white min-h-screen p-">
     <div class="flex items-center justify-start gap-1 mb-2">
     <img src="{{ asset('images/logo-skd.png') }}" alt="Logo Sekadau" class="w-15 ml-4">
     <img src="{{ asset('images/logo-ip3k.png') }}" alt="Logo IP3K" class="w-24">
@@ -65,10 +65,12 @@
             </nav>
         </aside>
 
+        <div class="pl-64">
         {{-- Konten utama --}}
         <main class="flex-1 p-8">
             @yield('content')
         </main>
+    </div>
     </div>
 @stack('scripts')
 </body>
