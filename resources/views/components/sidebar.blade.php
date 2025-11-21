@@ -12,9 +12,11 @@
         <a href="#" class="flex items-center gap-3 bg-secondary text-white rounded-lg px-4 py-2 font-bold">
             <i class="fa fa-home"></i> <span>Beranda</span>
         </a>
-        <a href="#" class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">
+        <a href="{{ route('data.infrastruktur') }}"
+        class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">
             <i class="fa fa-database"></i> <span>Data Infrastruktur</span>
         </a>
+
         <a href="#" class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">
             <i class="fa fa-leaf"></i> <span>Data Pertanian</span>
         </a>
