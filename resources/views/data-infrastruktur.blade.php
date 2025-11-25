@@ -1,15 +1,27 @@
-@extends('Layouts.app')
+@extends('layouts.app')
 
 @section('content')
-
     <header class="bg-blue-900 text-white rounded-xl p-4 mb-6 shadow-card">
     <h1 class="text-xl font-semibold">Dashboard Program IP3K Kabupaten Sekadau</h1>
     <p class="text-sm">Data Infrastruktur</p>
     </header>
 
-    <!-- Section Statistik + Search -->
-    <div class="px-1 mt-5 max-w-[1400px] mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+<!-- Section Statistik + Search -->
+<div class="px-1 mt-5 max-w-[1400px] mx-auto">
+    <!-- Search -->
+      <div class="flex justify-between items-center mb-4">
+      <div class="relative w-full md:w-60 lg:w-72">
+        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">🔍</span>
+        <input
+          type="text"
+          placeholder="Search..."
+          class="w-full pl-9 pr-3 py-1.5 rounded-lg border border-[#BBDEFB] focus:ring-2 focus:ring-blue-400 outline-none text-sm bg-white">
+        </div>
+    </div>
+
+    <!-- Gird Card -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      
         <!-- Card 1 -->
         <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
          <!-- Icon panah -->
@@ -52,32 +64,22 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h9m0 0v9m0-9L6 18" /></svg></a>
         <h2 class="text-xl font-bold">540 unit</h2>
         <p class="text-gray-600 text-sm">Fasilitas Kesehatan</p>
-        </div>
-
-        <!-- Search -->
-        <div class="flex items-center justify-end">
-      <div class="relative w-full md:w-60 lg:w-72">
-        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">🔍</span>
-        <input
-          type="text"
-          placeholder="Search..."
-          class="w-full pl-9 pr-3 py-1.5 rounded-lg border border-[#BBDEFB] focus:ring-2 focus:ring-blue-400 outline-none text-sm bg-white">
-        </div>
-    </div>
+      </div>
+  </div>
 </div>
 
-    <h2 class="font-semibold text-lg mb-4">Pantau kondisi dan detail infrastruktur wilayah Anda</h2>
+<h2 class="font-semibold text-lg mb-4">Pantau kondisi dan detail infrastruktur wilayah Anda</h2>
 
-    <!-- ================= SECTION 1 TRANSPORTASI ================= -->
+<!-- ================= SECTION 1 TRANSPORTASI ================= -->
     <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M35.1229 6.55143C34.5872 6.01557 33.8606 5.71445 33.1029 5.71429H21.4286V0H18.5714V14.2857H6.89714C6.13944 14.2859 5.41284 14.587 4.87714 15.1229L0 20L4.87714 24.8771C5.41284 25.413 6.13944 25.7141 6.89714 25.7143H18.5714V40H21.4286V17.1429H33.1029C33.8606 17.1427 34.5872 16.8416 35.1229 16.3057L40 11.4286L35.1229 6.55143ZM6.89714 22.8571L4.04 20L6.89714 17.1429H18.5714V22.8571H6.89714ZM33.1029 14.2857H21.4286V8.57143H33.1029L35.96 11.4286L33.1029 14.2857Z" fill="#F44336"/>
-        </svg><h3 class="font-semibold">Transportasi & Jalan</h3>
+        </svg>
+        <h3 class="font-semibold">Transportasi & Jalan</h3>
         </div>
 
         <table class="w-full text-sm">
-            <thead class="text-left border-b">
             <thead class="text-left border-b border-[#1E88E5]">
                 <tr>
                     <th class="py-2">Nama Infrastruktur</th>
@@ -87,49 +89,45 @@
                     <th>Kondisi</th>
                 </tr>
             </thead>
-            </thead>
-            <tbody class="divide-y">
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+            <tbody>
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Jalan Nasional 1</td>
                     <td>Sekadau Hilir</td>
                     <td>Jalan Raya</td>
                     <td>2021</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
-            </thead>
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Jembatan Sungai Kapuas</td>
                     <td>Sekadau Hilir</td>
                     <td>Jembatan Baja</td>
                     <td>2022</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Perlu Perbaikan</span></td>
                 </tr>
-            </thead>
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Jalan Desa Sungai Durian</td>
                     <td>Nanga Taman</td>
                     <td>Jalan Desa</td>
                     <td>2023</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
-            </thead>
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Jembatan Sekadau-Sintang</td>
                     <td>Nanga Mahap</td>
                     <td>Jembatan Gantung</td>
                     <td>2024</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">Sedang Diperbaiki</span></td>
-                </tr>
-            </thead>
+                   </tr>
             </tbody>
         </table>
+
     </div>
 
-    <!-- ================= SECTION 2 ENERGI & UTILITAS ================= -->
+<!-- ================= SECTION 2 ENERGI & UTILITAS ================= -->
     <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
          <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,56 +136,52 @@
             <h3 class="font-semibold">Energi & Utilitas</h3>
         </div>
 
-        <table class="w-full text-sm ">
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
-                    <th class="py-2">Nama Infrastruktur</th>
-                    <th>Lokasi</th>
-                    <th>Jenis Infrastruktur</th>
-                    <th>Tahun Pembangunan</th>
-                    <th>Kondisi</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y">
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
-                    <td class="py-2">PLTU Sungai Ayak</td>
-                    <td>Nanga Mahap</td>
-                    <td>Pembangkit Listrik</td>
-                    <td>2021</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Aktif</span></td>
-                </tr>
-                </thead>
+        <table class="w-full text-sm">
                 <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
-                    <td class="py-2">PLTA Sekadau Kota</td>
-                    <td>Nanga Taman</td>
-                    <td>Pembangkit Listrik</td>
-                    <td>2022</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Perlu Perbaikan</span></td>
-                </tr>
+                    <tr>
+                        <th class="py-2">Nama Infrastruktur</th>
+                        <th>Lokasi</th>
+                        <th>Jenis Infrastruktur</th>
+                        <th>Tahun Pembangunan</th>
+                        <th>Kondisi</th>
+                    </tr>
                 </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
-                    <td class="py-2">PDAM Sekadau Kota</td>
-                    <td>Ensali</td>
-                    <td>Air Bersih</td>
-                    <td>2023</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
-                </tr>
-                </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                 <tr>
-                    <td class="py-2">SPAM Rawak </td>
-                    <td>Sekadau Hulu</td>
-                    <td>Air Bersih</td>
-                    <td>2024</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Gangguan</span></td>
-                </tr>
-                </thead>
-            </tbody>
-        </table>
-    </div>
+
+                <tbody>
+                    <tr class="border-b border-[#1E88E5]">
+                        <td class="py-2">PLTU Sungai Ayak</td>
+                        <td>Nanga Mahap</td>
+                        <td>Pembangkit Listrik</td>
+                        <td>2021</td>
+                        <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Aktif</span></td>
+                    </tr>
+
+                    <tr class="border-b border-[#1E88E5]">
+                        <td class="py-2">PLTA Sekadau Kota</td>
+                        <td>Nanga Taman</td>
+                        <td>Pembangkit Listrik</td>
+                        <td>2022</td>
+                        <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Perlu Perbaikan</span></td>
+                    </tr>
+
+                    <tr class="border-b border-[#1E88E5]">
+                        <td class="py-2">PDAM Sekadau Kota</td>
+                        <td>Ensali</td>
+                        <td>Air Bersih</td>
+                        <td>2023</td>
+                        <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
+                    </tr>
+
+                    <tr class="border-b border-[#1E88E5]">
+                        <td class="py-2">SPAM Rawak</td>
+                        <td>Sekadau Hulu</td>
+                        <td>Air Bersih</td>
+                        <td>2024</td>
+                        <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Gangguan</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
 <!-- ================= SECTION 3 TELEKOMUNIKASI ================= -->
     <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
@@ -198,8 +192,8 @@
         </svg>
             <h3 class="font-semibold">Telekomunikasi</h3>
         </div>
-
-        <table class="w-full text-sm ">
+ 
+           <table class="w-full text-sm">
             <thead class="text-left border-b border-[#1E88E5]">
                 <tr>
                     <th class="py-2">Nama Infrastruktur</th>
@@ -209,43 +203,39 @@
                     <th>Kondisi</th>
                 </tr>
             </thead>
-            <tbody class="divide-y">
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+            <tbody>
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Tower Telkomsel 001</td>
                     <td>Sekadau Hilir</td>
                     <td>BTS 4G</td>
                     <td>2021</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Aktif</span></td>
                 </tr>
-                </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Tower Telkomsel 002</td>
                     <td>Nanga Taman</td>
                     <td>BTS 5G</td>
                     <td>2022</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Terputus</span></td>
                 </tr>
-                </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Tower Indosat 002</td>
                     <td>Nanga Mahap</td>
                     <td>Jaringan Fiber Optik</td>
                     <td>2023</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
-                </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                 <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Tower XL 003</td>
                     <td>Sekadau Hulu</td>
                     <td>BTS 4G</td>
                     <td>2024</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Gangguan</span></td>
                 </tr>
-                </thead>
             </tbody>
         </table>
     </div>
@@ -314,7 +304,7 @@
             <h3 class="font-semibold">Perumahan & Lingkungan</h3>
         </div>
 
-        <table class="w-full text-sm ">
+         <table class="w-full text-sm">
             <thead class="text-left border-b border-[#1E88E5]">
                 <tr>
                     <th class="py-2">Nama Infrastruktur</th>
@@ -324,43 +314,39 @@
                     <th>Kondisi</th>
                 </tr>
             </thead>
-            <tbody class="divide-y">
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+            <tbody>
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Perumahan Griya Indah</td>
                     <td>Nanga Mahap</td>
                     <td>Perumahan</td>
                     <td>2021</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Selesai Dibangun</span></td>
                 </tr>
-                </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Rusunawa Sungai Ayak</td>
                     <td>Nanga Taman</td>
                     <td>Hunian Vertikal</td>
                     <td>2022</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">Sedang Dibangun</span></td>
-                </tr>
-                </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
+                    </tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">Perumahan Cintra Asri</td>
                     <td>Sekadau Hulu</td>
                     <td>Perumahan</td>
                     <td>2023</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
-                </thead>
-                <thead class="text-left border-b border-[#1E88E5]">
-                 <tr>
+
+                <tr class="border-b border-[#1E88E5]">
                     <td class="py-2">TPA Sekadau Kota</td>
                     <td>Sekadau Hilir</td>
                     <td>Pengelolaan Sampah</td>
                     <td>2024</td>
                     <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Penuh</span></td>
                 </tr>
-                </thead>
             </tbody>
         </table>
     </div>

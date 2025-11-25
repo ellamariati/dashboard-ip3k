@@ -7,7 +7,7 @@
     <p class="text-sm">Data Pertanian</p>
     </header>
 
-    <!-- Section Statistik + Search -->
+<!-- Section Statistik + Search -->
     <div class="px-1 mt-5 max-w-[1400px] mx-auto">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-6">
         <!-- Card 1 -->
@@ -66,19 +66,43 @@
     </div>
 </div>
 
-<div class="w-full">
     <h2 class="font-semibold text-lg mb-4">Pantau kondisi dan Detail Data Pertanian Wilayah Anda </h2>
 
-    <!-- Filter -->
-    <div class="mb-4">
-        <select class="border rounded px-3 py-2">
-            <option value="">Filter Pertahun</option>
-            <option>2020</option>
-            <option>2021</option>
-            <option>2022</option>
-            <option>2023</option>
-        </select>
-    </div>
+            <!-- Filter -->
+            <div class="mb-4">
+            <button id="dropdownButton" class="w-70 flex items-center justify-between border border-blue-400 px-4 py-2 rounded-lg bg-[#F8FBFF]">
+            <!-- Icon kiri -->
+            <div class="flex items-center gap-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#0B8A0B">
+                <path d="M3 4h18l-7 9v6l-4 2v-8L3 4z"/>
+                </svg>
+                <span class="font-semibold text-gray-700">Filter Pertahun</span>
+            </div>
+            <!-- Panah kanan -->
+                <svg id="dropdownArrow" width="26" height="26" viewBox="0 0 24 24" fill="black" 
+                    class="transition-transform duration-200">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+            </button>
+            <!-- Menu dropdown -->
+            <div id="dropdownMenu" class="hidden absolute left-123 right-0 mt-1 border border-blue-400 rounded-lg bg-white shadow-md max-w-sm w-20">
+                <button class="block w-full text-left px-4 py-2 hover:bg-blue-100">2020</button>
+                <button class="block w-full text-left px-4 py-2 hover:bg-blue-100">2021</button>
+                <button class="block w-full text-left px-4 py-2 hover:bg-blue-100">2022</button>
+                <button class="block w-full text-left px-4 py-2 hover:bg-blue-100">2023</button>
+            </div>
+        </div>
+
+        <script>
+            const dropdownButton = document.getElementById("dropdownButton");
+            const dropdownMenu   = document.getElementById("dropdownMenu");
+            const dropdownArrow  = document.getElementById("dropdownArrow");
+
+            dropdownButton.addEventListener("click", () => {
+                dropdownMenu.classList.toggle("hidden");
+                dropdownArrow.classList.toggle("rotate-180");
+            });
+        </script>
 
     <!-- Tabel Data Pertanian -->
     <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">

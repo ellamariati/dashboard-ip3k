@@ -8,7 +8,20 @@
 
     <!-- Section Statistik + Search -->
     <div class="px-1 mt-5 max-w-[1400px] mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+    <!-- Search -->
+      <div class="flex justify-between items-center mb-4">
+      <div class="relative w-full md:w-60 lg:w-72">
+        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">🔍</span>
+        <input
+          type="text"
+          placeholder="Search..."
+          class="w-full pl-9 pr-3 py-1.5 rounded-lg border border-[#BBDEFB] focus:ring-2 focus:ring-blue-400 outline-none text-sm bg-white">
+        </div>
+    </div>
+
+    <!-- Gird Card -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      
         <!-- Card 1 -->
         <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
          <!-- Icon panah -->
@@ -51,19 +64,10 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h9m0 0v9m0-9L6 18" /></svg></a>
         <h2 class="text-xl font-bold">540 unit</h2>
         <p class="text-gray-600 text-sm">Fasilitas Kesehatan</p>
-        </div>
-
-        <!-- Search -->
-        <div class="flex items-center justify-end">
-      <div class="relative w-full md:w-60 lg:w-72">
-        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">🔍</span>
-        <input
-          type="text"
-          placeholder="Search..."
-          class="w-full pl-9 pr-3 py-1.5 rounded-lg border border-[#BBDEFB] focus:ring-2 focus:ring-blue-400 outline-none text-sm bg-white">
-        </div>
-    </div>
+      </div>
+  </div>
 </div>
+
     <!-- BOX Data -->
    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
      <!-- Tren Panjang Jalan -->
@@ -76,11 +80,6 @@
     <h2 class="font-semibold mb-4 text-lg">Status Jembatan</h2>
         <div class="flex items-start gap-6 h-full justify-end">
             <canvas id="statusJembatanChart" class="max-h-[215px] w-[220px] mr-10"></canvas>
-        <!--<div class="text-sm space-y-3">
-            <p class="flex items-center gap-2"><span class="w-3 h-3 aspect-square rounded-full bg-[#4CAF50]"></span> Baik</p>
-            <p class="flex items-center gap-2"><span class="w-3 h-3 aspect-square rounded-full bg-[#FFC107]"></span> Rusak Ringan</p>
-            <p class="flex items-center gap-2"><span class="w-3 h-3 aspect-square rounded-full bg-[#F44336]"></span> Rusak Berat</p>
-        </div>-->
     </div>
 </div>
 </div>
