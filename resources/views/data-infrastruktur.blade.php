@@ -95,7 +95,7 @@
                     <td>Sekadau Hilir</td>
                     <td>Jalan Raya</td>
                     <td>2021</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Baik</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
             </thead>
             <thead class="text-left border-b border-[#1E88E5]">
@@ -104,7 +104,7 @@
                     <td>Sekadau Hilir</td>
                     <td>Jembatan Baja</td>
                     <td>2022</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-red-200 text-red-700 font-semibold">Perlu Perbaikan</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Perlu Perbaikan</span></td>
                 </tr>
             </thead>
             <thead class="text-left border-b border-[#1E88E5]">
@@ -113,7 +113,7 @@
                     <td>Nanga Taman</td>
                     <td>Jalan Desa</td>
                     <td>2023</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Baik</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
             </thead>
             <thead class="text-left border-b border-[#1E88E5]">
@@ -122,7 +122,7 @@
                     <td>Nanga Mahap</td>
                     <td>Jembatan Gantung</td>
                     <td>2024</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-yellow-700 font-semibold">Sedang Diperbaiki</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">Sedang Diperbaiki</span></td>
                 </tr>
             </thead>
             </tbody>
@@ -155,7 +155,7 @@
                     <td>Nanga Mahap</td>
                     <td>Pembangkit Listrik</td>
                     <td>2021</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Aktif</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Aktif</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -164,7 +164,7 @@
                     <td>Nanga Taman</td>
                     <td>Pembangkit Listrik</td>
                     <td>2022</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-red-200 text-red-700 font-semibold">Perlu Perbaikan</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Perlu Perbaikan</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -173,7 +173,7 @@
                     <td>Ensali</td>
                     <td>Air Bersih</td>
                     <td>2023</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Baik</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -182,7 +182,7 @@
                     <td>Sekadau Hulu</td>
                     <td>Air Bersih</td>
                     <td>2024</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-red-200 text-red-700 font-semibold">Gangguan</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Gangguan</span></td>
                 </tr>
                 </thead>
             </tbody>
@@ -216,7 +216,7 @@
                     <td>Sekadau Hilir</td>
                     <td>BTS 4G</td>
                     <td>2021</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Aktif</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Aktif</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -225,7 +225,7 @@
                     <td>Nanga Taman</td>
                     <td>BTS 5G</td>
                     <td>2022</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-red-200 text-red-700 font-semibold">Terputus</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Terputus</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -234,7 +234,7 @@
                     <td>Nanga Mahap</td>
                     <td>Jaringan Fiber Optik</td>
                     <td>2023</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Baik</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -243,7 +243,7 @@
                     <td>Sekadau Hulu</td>
                     <td>BTS 4G</td>
                     <td>2024</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-red-200 text-red-700 font-semibold">Gangguan</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Gangguan</span></td>
                 </tr>
                 </thead>
             </tbody>
@@ -331,7 +331,7 @@
                     <td>Nanga Mahap</td>
                     <td>Perumahan</td>
                     <td>2021</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Selesai Dibangun</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Selesai Dibangun</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -340,7 +340,7 @@
                     <td>Nanga Taman</td>
                     <td>Hunian Vertikal</td>
                     <td>2022</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-yellow-700 font-semibold">Sedang Dibangun</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">Sedang Dibangun</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -349,7 +349,7 @@
                     <td>Sekadau Hulu</td>
                     <td>Perumahan</td>
                     <td>2023</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-green-200 text-green-700 font-semibold">Baik</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
                 </tr>
                 </thead>
                 <thead class="text-left border-b border-[#1E88E5]">
@@ -358,7 +358,7 @@
                     <td>Sekadau Hilir</td>
                     <td>Pengelolaan Sampah</td>
                     <td>2024</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-red-200 text-red-700 font-semibold">Penuh</span></td>
+                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Penuh</span></td>
                 </tr>
                 </thead>
             </tbody>
