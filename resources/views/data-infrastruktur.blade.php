@@ -181,7 +181,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+    </div>
 
 <!-- ================= SECTION 3 TELEKOMUNIKASI ================= -->
     <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">

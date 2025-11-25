@@ -66,7 +66,7 @@
     </div>
 </div>
 
-    <h2 class="font-semibold text-lg mb-4">Pantau kondisi dan Detail Data Pertanian Wilayah Anda </h2>
+<h2 class="font-semibold text-lg mb-4">Pantau kondisi dan Detail Data Pertanian Wilayah Anda </h2>
 
             <!-- Filter -->
             <div class="mb-4">
@@ -115,8 +115,8 @@
         </svg><h3 class="font-semibold">Tabel Data Pertanian</h3>
         </div>
 
-        <table class="w-full text-sm">
-            <thead class="text-left border-b">
+            <table class="w-full text-sm">
+            
             <thead class="text-left border-b border-[#1E88E5]">
                 <tr>
                     <th class="py-2">Nama Infrastruktur</th>
@@ -126,46 +126,59 @@
                     <th>Kondisi</th>
                 </tr>
             </thead>
-            </thead>
+
             <tbody class="divide-y">
-            <thead class="text-left border-b border-[#1E88E5]">
+
                 <tr>
                     <td class="py-2">Jalan Nasional 1</td>
                     <td>Sekadau Hilir</td>
                     <td>Jalan Raya</td>
                     <td>2021</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
+                    <td>
+                        <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">
+                            Baik
+                        </span>
+                    </td>
                 </tr>
-            </thead>
-            <thead class="text-left border-b border-[#1E88E5]">
+
                 <tr>
                     <td class="py-2">Jembatan Sungai Kapuas</td>
                     <td>Sekadau Hilir</td>
                     <td>Jembatan Baja</td>
                     <td>2022</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Perlu Perbaikan</span></td>
+                    <td>
+                        <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">
+                            Perlu Perbaikan
+                        </span>
+                    </td>
                 </tr>
-            </thead>
-            <thead class="text-left border-b border-[#1E88E5]">
+
                 <tr>
                     <td class="py-2">Jalan Desa Sungai Durian</td>
                     <td>Nanga Taman</td>
                     <td>Jalan Desa</td>
                     <td>2023</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
+                    <td>
+                        <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">
+                            Baik
+                        </span>
+                    </td>
                 </tr>
-            </thead>
-            <thead class="text-left border-b border-[#1E88E5]">
+
                 <tr>
                     <td class="py-2">Jembatan Sekadau-Sintang</td>
                     <td>Nanga Mahap</td>
                     <td>Jembatan Gantung</td>
                     <td>2024</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">Sedang Diperbaiki</span></td>
+                    <td>
+                        <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">
+                            Sedang Diperbaiki
+                        </span>
+                    </td>
                 </tr>
-            </thead>
+
             </tbody>
         </table>
-    </div>
+ </div>
 
 @endsection
