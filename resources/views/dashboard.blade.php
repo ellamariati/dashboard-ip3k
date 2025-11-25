@@ -75,12 +75,12 @@
     <div class="bg-[#E3F2FD] p-6 rounded-2xl shadow-lg h-80">
     <h2 class="font-semibold mb-4 text-lg">Status Jembatan</h2>
         <div class="flex items-start gap-6 h-full justify-end">
-            <canvas id="statusJembatanChart" class="max-h-[215px] w-[220px]"></canvas>
-        <div class="text-sm space-y-3">
+            <canvas id="statusJembatanChart" class="max-h-[215px] w-[220px] mr-10"></canvas>
+        <!--<div class="text-sm space-y-3">
             <p class="flex items-center gap-2"><span class="w-3 h-3 aspect-square rounded-full bg-[#4CAF50]"></span> Baik</p>
             <p class="flex items-center gap-2"><span class="w-3 h-3 aspect-square rounded-full bg-[#FFC107]"></span> Rusak Ringan</p>
             <p class="flex items-center gap-2"><span class="w-3 h-3 aspect-square rounded-full bg-[#F44336]"></span> Rusak Berat</p>
-        </div>
+        </div>-->
     </div>
 </div>
 </div>
@@ -200,7 +200,13 @@ new Chart(ctx2, {
         maintainAspectRatio: false,
         plugins: {
             legend: {
-                display: false   // HILANGKAN LEGEND DEFAULT
+                display: true,   // HILANGKAN LEGEND DEFAULT
+                position: 'right',
+                labels:{
+                usePointStyle: true,   // pakai style point (lingkaran)
+                pointStyle: "circle",  // bentuk bulat
+                padding: 12            // jarak antar item
+                }
             }
         },
         cutout: '65%'
