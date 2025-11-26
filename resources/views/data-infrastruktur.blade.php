@@ -7,7 +7,7 @@
     </header>
 
 <!-- Section Statistik + Search -->
-<div class="px-1 mt-5 max-w-[1400px] mx-auto">
+<div class="px-1 mt-5 max-w-[1400px] min-w-[945px] mx-auto">
     <!-- Search -->
       <div class="flex justify-between items-center mb-4">
       <div class="relative w-full md:w-60 lg:w-72">
@@ -68,10 +68,10 @@
   </div>
 </div>
 
-<h2 class="font-semibold text-lg mb-4">Pantau kondisi dan detail infrastruktur wilayah Anda</h2>
+<h2 class="font-semibold text-lg mb-4 ml-1">Pantau kondisi dan detail infrastruktur wilayah Anda</h2>
 
 <!-- ================= SECTION 1 TRANSPORTASI ================= -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M35.1229 6.55143C34.5872 6.01557 33.8606 5.71445 33.1029 5.71429H21.4286V0H18.5714V14.2857H6.89714C6.13944 14.2859 5.41284 14.587 4.87714 15.1229L0 20L4.87714 24.8771C5.41284 25.413 6.13944 25.7141 6.89714 25.7143H18.5714V40H21.4286V17.1429H33.1029C33.8606 17.1427 34.5872 16.8416 35.1229 16.3057L40 11.4286L35.1229 6.55143ZM6.89714 22.8571L4.04 20L6.89714 17.1429H18.5714V22.8571H6.89714ZM33.1029 14.2857H21.4286V8.57143H33.1029L35.96 11.4286L33.1029 14.2857Z" fill="#F44336"/>
@@ -128,7 +128,7 @@
     </div>
 
 <!-- ================= SECTION 2 ENERGI & UTILITAS ================= -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
          <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19 36L28.72 16.54H22V4L12 23.46H19V36ZM20 0C25.5 0 30.2 2 34.1 5.9C38 9.8 40 14.5 40 20C40 25.5 38 30.2 34.1 34.1C30.2 38 25.5 40 20 40C14.5 40 9.8 38 5.9 34.1C2 30.2 0 25.5 0 20C0 14.5 2 9.8 5.9 5.9C9.8 2 14.5 0 20 0Z" fill="#FFD400"/>
@@ -184,7 +184,7 @@
     </div>
 
 <!-- ================= SECTION 3 TELEKOMUNIKASI ================= -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M21.306 36.9831C18.2352 35.1765 15.8516 32.4308 14.5204 29.1665H17.9132C18.3631 29.1665 18.7946 28.9909 19.1128 28.6784C19.4309 28.3658 19.6096 27.9419 19.6096 27.4999C19.6096 27.0579 19.4309 26.6339 19.1128 26.3214C18.7946 26.0088 18.3631 25.8332 17.9132 25.8332H13.4007C12.9374 23.9226 12.7095 21.9641 12.7222 20C12.7149 18.3213 12.8797 16.6462 13.2141 15H37.7952C38.0687 14.9907 38.3359 14.9165 38.5739 14.7837C38.8118 14.651 39.0136 14.4637 39.1619 14.2377C39.3103 14.0118 39.4007 13.7539 39.4257 13.4862C39.4506 13.2184 39.4092 12.9487 39.305 12.7001C37.8052 8.94155 35.1828 5.71692 31.7825 3.4502C28.3823 1.18347 24.3634 -0.019231 20.2543 0.000232555C7.49721 0.816889 0.62672 10.1501 0.0499376 18.6C-0.145593 21.3375 0.234419 24.0853 1.16633 26.6724C2.09823 29.2594 3.56209 31.6303 5.46682 33.6376C7.37154 35.6449 9.67637 37.2457 12.2379 38.3402C14.7994 39.4347 17.5628 39.9996 20.3561 39.9997C20.7553 40.0069 21.1444 39.8754 21.4547 39.6284C21.765 39.3815 21.9767 39.0349 22.0525 38.6497C22.106 38.3307 22.0639 38.0033 21.9314 37.7074C21.7989 37.4115 21.5816 37.1598 21.306 36.9831ZM9.92309 25.8332H4.47759C3.14376 22.3577 3.03623 18.5428 4.17223 15H9.8213C9.53232 16.6514 9.39042 18.3244 9.3972 20C9.37513 21.9567 9.55129 23.9108 9.92309 25.8332ZM20.3561 3.61685C23.203 5.61749 25.358 8.42677 26.531 11.6668H14.1641C15.3378 8.42249 17.4997 5.61188 20.3561 3.61685ZM35.047 11.6668H30.1783C29.3222 8.97426 27.9392 6.47191 26.1069 4.30018C29.8919 5.61919 33.066 8.23461 35.047 11.6668ZM14.69 4.33351C12.8458 6.49013 11.451 8.98174 10.5847 11.6668H5.68204C7.69488 8.27474 10.8513 5.68071 14.6052 4.33351H14.69ZM6.20793 29.1665H10.8561C11.7022 31.53 12.9719 33.7257 14.6052 35.6498C11.1686 34.4333 8.22354 32.1595 6.20793 29.1665Z" fill="#70E000"/>
@@ -241,7 +241,7 @@
     </div>
 
 <!-- ================= SECTION 4 PERUMAHAN & LINGKUNGAN ================= -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_191_2489)">

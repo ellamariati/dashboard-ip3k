@@ -16,3 +16,8 @@ Route::get('/data-infrastruktur', function () {
 Route::get('/data-pertanian', function () {
     return view('data-pertanian'); 
 })->name('data.pertanian');
+
+// Route Fasilitas Publik
+Route::get('/fasilitas-publik', function () {
+    return view('fasilitas-publik'); 
+})->name('fasilitas.publik');

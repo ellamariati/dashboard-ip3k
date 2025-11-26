@@ -69,7 +69,7 @@
 </div>
 
     <!-- BOX Data -->
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ml-1">
      <!-- Tren Panjang Jalan -->
     <div class="bg-[#E3F2FD] p-6 rounded-2xl shadow-lg h-80">
         <h2 class="font-semibold mb-4 text-lg">Tren Panjang Jalan</h2>
@@ -84,13 +84,13 @@
 </div>
 </div>
     <!-- Hasil Panen-->
-    <div class="bg-[#dff0ff] p-6 rounded-2xl shadow-lg h-80 mt-10">
+    <div class="bg-[#dff0ff] p-6 rounded-2xl shadow-lg h-80 mt-10 ml-1">
     <h2 class="text-lg font-semibold mb-4">Hasil Panen</h2>
     <canvas id="hasilPanenChart" class="max-h-[220px] w-[220px]"></canvas>
 </div>
 
 <!-- DATA BOX BAWAH-->
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-10">
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-10 ml-1">
     <!-- Daftar Proyek -->
 <div class="bg-[#E3F2FD] rounded-xl shadow-lg p-5 w-full ">
   <h2 class="text-lg font-semibold mb-4">Daftar Proyek</h2>

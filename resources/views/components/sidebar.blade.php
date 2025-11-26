@@ -8,7 +8,7 @@
     <img src="{{ asset('images/logo-skd.png') }}" alt="Logo IP3K" class="w-20 mb-3">
 </div>
     {{-- Menu --}}
-    <nav class="flex-1 space-y-2 mt-6">
+    <nav class="flex-1 space-y-2 mt-10">
         <a href="#" class="flex items-center gap-3 bg-secondary text-white rounded-lg px-4 py-2 font-bold">
             <i class="fa fa-home"></i> <span>Beranda</span>
         </a>
@@ -17,10 +17,10 @@
             <i class="fa fa-database"></i> <span>Data Infrastruktur</span>
         </a>
 
-        <a href="#" class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">
+        <a href="{{ route('data.pertanian') }}" class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">
             <i class="fa fa-leaf"></i> <span>Data Pertanian</span>
         </a>
-        <a href="#" class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">
+        <a href="{{ route('fasilitas.publik') }}" class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">
             <i class="fa fa-hospital"></i> <span>Fasilitas Publik</span>
         </a>
         <a href="#" class="flex items-center gap-3 hover:bg-secondary/80 rounded-lg px-4 py-2">

@@ -7,9 +7,21 @@
     <p class="text-sm">Data Pertanian</p>
     </header>
 
-<!-- Section Statistik + Search -->
-    <div class="px-1 mt-5 max-w-[1400px] mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+    <!-- Section Statistik + Search -->
+    <div class="px-1 mt-5 max-w-[1400px] min-w-[945px] mx-auto">
+        <!-- Search -->
+            <div class="flex justify-between items-center mb-4">
+            <div class="relative w-full md:w-60 lg:w-72">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">🔍</span>
+            <input
+            type="text"
+            placeholder="Search..."
+            class="w-full pl-9 pr-3 py-1.5 rounded-lg border border-[#BBDEFB] focus:ring-2 focus:ring-blue-400 outline-none text-sm bg-white">
+            </div>
+        </div>
+    
+    <!-- Grid Card -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <!-- Card 1 -->
         <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
          <!-- Icon panah -->
@@ -53,28 +65,18 @@
         <h2 class="text-xl font-bold">540 unit</h2>
         <p class="text-gray-600 text-sm">Fasilitas Kesehatan</p>
         </div>
-
-        <!-- Search -->
-        <div class="flex items-center justify-end">
-      <div class="relative w-full md:w-60 lg:w-72">
-        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">🔍</span>
-        <input
-          type="text"
-          placeholder="Search..."
-          class="w-full pl-9 pr-3 py-1.5 rounded-lg border border-[#BBDEFB] focus:ring-2 focus:ring-blue-400 outline-none text-sm bg-white">
-        </div>
     </div>
 </div>
 
-<h2 class="font-semibold text-lg mb-4">Pantau kondisi dan Detail Data Pertanian Wilayah Anda </h2>
+<h2 class="font-semibold text-lg mb-4 ml-1">Pantau kondisi dan Detail Data Pertanian Wilayah Anda </h2>
 
-            <!-- Filter -->
-            <div class="mb-4">
+        <!-- Filter -->
+        <div class="mb-4 ml-1">
             <button id="dropdownButton" class="w-70 flex items-center justify-between border border-blue-400 px-4 py-2 rounded-lg bg-[#F8FBFF]">
             <!-- Icon kiri -->
             <div class="flex items-center gap-3">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="#0B8A0B">
-                <path d="M3 4h18l-7 9v6l-4 2v-8L3 4z"/>
+                <svg width="26" height="26" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.7286 23.6842L35.8189 4.26316C36.188 3.71455 36.3545 3.0191 36.2821 2.32876C36.2097 1.63843 35.9043 1.00933 35.4326 0.578947C35.0511 0.223805 34.5808 0.0207517 34.0917 0H2.27513C1.76251 0.00344317 1.26595 0.207472 0.86611 0.578947C0.394395 1.00933 0.088972 1.63843 0.01658 2.32876C-0.0558121 3.0191 0.110713 3.71455 0.479766 4.26316L13.6382 23.6842V39.1316C13.5971 39.5297 13.6351 39.9335 13.7493 40.3121C13.8635 40.6906 14.0509 41.0339 14.2973 41.3158L18.8425 46.5789C19.2683 47.0691 19.8443 47.3442 20.4447 47.3442C21.0451 47.3442 21.6211 47.0691 22.0469 46.5789C22.2972 46.2995 22.4889 45.9573 22.6071 45.5786C22.7253 45.2 22.7669 44.7949 22.7286 44.3947V23.6842ZM27.2739 36.8421L38.6369 50L50 36.8421H27.2739Z" fill="#006400"/>
                 </svg>
                 <span class="font-semibold text-gray-700">Filter Pertahun</span>
             </div>
@@ -105,7 +107,7 @@
         </script>
 
     <!-- Tabel Data Pertanian -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M26.6658 2.22222C26.6658 0.994444 23.3458 0 19.9991 0C16.6525 0 13.3325 0.994444 13.3325 2.22222L12.3858 5.37889C12.778 5.43889 13.2102 5.50222 13.6669 5.56556C15.6625 5.84333 18.1002 6.11111 19.9991 6.11111C21.8991 6.11111 24.3358 5.84222 26.3314 5.56667C26.788 5.50222 27.2202 5.43889 27.6125 5.37889L26.6658 2.22222ZM28.4291 7.50111C27.9091 7.58333 27.2991 7.67556 26.6358 7.76778C24.6214 8.04556 22.058 8.33333 19.9991 8.33333C17.9391 8.33333 15.3769 8.04667 13.3625 7.76667C12.7639 7.68375 12.1661 7.59523 11.5691 7.50111C7.92691 8.30889 5.55469 9.62444 5.55469 11.1111C5.55469 13.5667 12.0214 15.5556 19.9991 15.5556C27.9769 15.5556 34.4436 13.5667 34.4436 11.1111C34.4436 9.62444 32.0714 8.30889 28.4291 7.50111Z" fill="#FFD400"/>
@@ -176,9 +178,144 @@
                         </span>
                     </td>
                 </tr>
-
             </tbody>
         </table>
  </div>
 
+    <!-- Produksi Pertanian Kabupaten Sekadau Pertahun -->
+    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
+            <h2 class="font-semibold mb-4 text-lg">Produksi Pertanian Kabupaten Sekadau Pertahun</h2>
+            <canvas id="produksiPertanianKabupatenSekadauChart" class="max-h-[220px] w-[220px]"></canvas>
+    </div>
+    <!-- Distribusi Lahan -->
+    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5] max-w-xl">
+        <h2 class="font-semibold mb-4 text-lg">Distribusi Kondisi Lahan</h2>
+        <div class="flex justify-center">
+        <canvas id="donutLahan" class="w-70 aspect-square"></canvas>
+        </div>
+    </div>
+
+@push('scripts')
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+        // Chart 1 - Batang
+        const ctx1 = document.getElementById('produksiPertanianKabupatenSekadauChart');
+        new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: ['2020','2021','2022','2023','2024','2025','2026','2027'],
+            datasets: [
+                {
+                    label: 'Padi',
+                    data: [1500, 2000, 2600, 3200, 3500, 3800, 4300, 4800],
+                    backgroundColor: '#4CAF50',
+                    barThickness: 18,
+                    borderRadius: 6
+                },
+                {
+                    label: 'Sawit',
+                    data: [1800, 2100, 2400, 3000, 3400, 3900, 4200, 4600],
+                    backgroundColor: '#F44336',
+                    barThickness: 18,
+                    borderRadius: 6
+                },
+                {
+                    label: 'Karet',
+                    data: [1700, 2300, 2900, 3300, 3700, 4300, 4600, 4800],
+                    backgroundColor: '#FF9800',
+                    barThickness: 18,
+                    borderRadius: 6
+                },
+                {
+                    label: 'Sayur & buah',
+                    data: [1600, 2500, 3000, 3500, 3800, 4200, 4600, 5000],
+                    backgroundColor: '#5BC7E6',
+                    barThickness: 18,
+                    borderRadius: 6
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels:{
+                        usePointStyle: true,
+                        pointStyle: "rect",
+                        padding: 12
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+
+        // Chart 2 - Donut
+        const ctx2 = document.getElementById('donutLahan');
+        const textInsidePlugin = {
+        id: 'textInsidePlugin',
+        afterDraw(chart) {
+        const {ctx, data} = chart;
+        const dataset = data.datasets[0];
+
+        chart.getDatasetMeta(0).data.forEach((slice, index) => {
+            const {x, y} = slice.tooltipPosition();
+            const value = dataset.data[index];
+
+            ctx.save();
+            ctx.fillStyle = "#000";
+            ctx.font = "bold 14px sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText(value + "%", x, y);
+            ctx.restore();
+        });
+    }
+};
+
+    new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['Panen Raya', 'Produktif', 'Kurang Produktif', 'Sedang Berkembang'],
+                datasets: [{
+                    data: [25, 25, 25, 25],
+                    backgroundColor: [
+                        '#C8F7F4', // Panen Raya
+                        '#D9F9C4', // Produktif
+                        '#F8C4C4', // Kurang Produktif
+                        '#F6E9A3'  // Sedang Berkembang
+                    ],
+                    //borderWidth: 10,
+                    hoverOffset: 8
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'right',
+                        labels:{
+                            usePointStyle: true,
+                            pointStyle: "circle",
+                            padding: 12
+                        }
+                    }
+                },
+                cutout: '1%'
+            },
+            plugins: [textInsidePlugin]
+        });
+});
+</script>
+    @endpush
 @endsection
