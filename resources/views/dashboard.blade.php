@@ -7,7 +7,7 @@
     </header>
 
     <!-- Section Statistik + Search -->
-    <div class="px-1 mt-5 max-w-[1400px] mx-auto">
+    <div class="px-1 mt-5 max-w-[1400px] mx-auto w-full">
     <!-- Search -->
       <div class="flex justify-between items-center mb-4">
       <div class="relative w-full md:w-60 lg:w-72">
@@ -23,7 +23,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
       
         <!-- Card 1 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
          <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -34,7 +34,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
         <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
         <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -56,7 +56,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
         <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -69,14 +69,14 @@
 </div>
 
     <!-- BOX Data -->
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ml-1">
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
      <!-- Tren Panjang Jalan -->
-    <div class="bg-[#E3F2FD] p-6 rounded-2xl shadow-lg h-80">
+    <div class="bg-[#E3F2FD] w-full p-4 rounded-2xl shadow-lg h-80">
         <h2 class="font-semibold mb-4 text-lg">Tren Panjang Jalan</h2>
         <canvas id="trenJalanChart" class="max-h-[220px] w-[220px]"></canvas>
     </div>
     <!--Status Jembatan-->
-    <div class="bg-[#E3F2FD] p-6 rounded-2xl shadow-lg h-80">
+    <div class="bg-[#E3F2FD] w-full p-4 rounded-2xl shadow-lg h-80">
     <h2 class="font-semibold mb-4 text-lg">Status Jembatan</h2>
         <div class="flex items-start gap-6 h-full justify-end">
             <canvas id="statusJembatanChart" class="max-h-[215px] w-[220px] mr-10"></canvas>
@@ -84,15 +84,15 @@
 </div>
 </div>
     <!-- Hasil Panen-->
-    <div class="bg-[#dff0ff] p-6 rounded-2xl shadow-lg h-80 mt-10 ml-1">
+    <div class="bg-[#dff0ff] p-4 rounded-2xl shadow-lg h-80 mt-10">
     <h2 class="text-lg font-semibold mb-4">Hasil Panen</h2>
     <canvas id="hasilPanenChart" class="max-h-[220px] w-[220px]"></canvas>
 </div>
 
 <!-- DATA BOX BAWAH-->
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-10 ml-1">
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-10 w-full">
     <!-- Daftar Proyek -->
-<div class="bg-[#E3F2FD] rounded-xl shadow-lg p-5 w-full ">
+<div class="bg-[#E3F2FD] w-full p-4 rounded-xl shadow-lg">
   <h2 class="text-lg font-semibold mb-4">Daftar Proyek</h2>
 
   <div class="overflow-x-auto">
@@ -135,7 +135,7 @@
   </div>
 </div>
 
-        <div class="bg-[#E3F2FD] p-4 rounded-xl shadow-lg h-64">🗺️ Pemetaan SIG</div>
+        <div class="bg-[#E3F2FD] w-full p-4 rounded-xl shadow-lg">🗺️ Pemetaan SIG</div>
     </div>
 
 @push('scripts')

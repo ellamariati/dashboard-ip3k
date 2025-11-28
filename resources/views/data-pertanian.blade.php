@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header class="bg-blue-900 text-white rounded-xl p-4 mb-6 shadow-card">
+<header class="bg-blue-900 text-white w-full rounded-xl p-4 mb-6 shadow-card">
     <h1 class="text-xl font-semibold">Dashboard Program IP3K Kabupaten Sekadau</h1>
     <p class="text-sm">Data Pertanian</p>
     </header>
@@ -21,7 +21,7 @@
         </div>
     
     <!-- Grid Card -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6 w-full">
         <!-- Card 1 -->
         <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
          <!-- Icon panah -->
@@ -68,10 +68,10 @@
     </div>
 </div>
 
-<h2 class="font-semibold text-lg mb-4 ml-1">Pantau kondisi dan Detail Data Pertanian Wilayah Anda </h2>
+<h2 class="font-semibold text-lg mb-4 w-full">Pantau kondisi dan detail data pertanian wilayah Anda </h2>
 
         <!-- Filter -->
-        <div class="mb-4 ml-1">
+        <div class="mb-4 w-full">
             <button id="dropdownButton" class="w-70 flex items-center justify-between border border-blue-400 px-4 py-2 rounded-lg bg-[#F8FBFF]">
             <!-- Icon kiri -->
             <div class="flex items-center gap-3">
@@ -87,7 +87,7 @@
                 </svg>
             </button>
             <!-- Menu dropdown -->
-            <div id="dropdownMenu" class="hidden absolute left-123 right-0 mt-1 border border-blue-400 rounded-lg bg-white shadow-md max-w-sm w-20">
+            <div id="dropdownMenu" class="hidden absolute left-122 right-0 mt-1 border border-blue-400 rounded-lg bg-white shadow-md max-w-sm w-20">
                 <button class="block w-full text-left px-4 py-2 hover:bg-blue-100">2020</button>
                 <button class="block w-full text-left px-4 py-2 hover:bg-blue-100">2021</button>
                 <button class="block w-full text-left px-4 py-2 hover:bg-blue-100">2022</button>
@@ -107,7 +107,7 @@
         </script>
 
     <!-- Tabel Data Pertanian -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
+    <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M26.6658 2.22222C26.6658 0.994444 23.3458 0 19.9991 0C16.6525 0 13.3325 0.994444 13.3325 2.22222L12.3858 5.37889C12.778 5.43889 13.2102 5.50222 13.6669 5.56556C15.6625 5.84333 18.1002 6.11111 19.9991 6.11111C21.8991 6.11111 24.3358 5.84222 26.3314 5.56667C26.788 5.50222 27.2202 5.43889 27.6125 5.37889L26.6658 2.22222ZM28.4291 7.50111C27.9091 7.58333 27.2991 7.67556 26.6358 7.76778C24.6214 8.04556 22.058 8.33333 19.9991 8.33333C17.9391 8.33333 15.3769 8.04667 13.3625 7.76667C12.7639 7.68375 12.1661 7.59523 11.5691 7.50111C7.92691 8.30889 5.55469 9.62444 5.55469 11.1111C5.55469 13.5667 12.0214 15.5556 19.9991 15.5556C27.9769 15.5556 34.4436 13.5667 34.4436 11.1111C34.4436 9.62444 32.0714 8.30889 28.4291 7.50111Z" fill="#FFD400"/>
@@ -183,15 +183,15 @@
  </div>
 
     <!-- Produksi Pertanian Kabupaten Sekadau Pertahun -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
-            <h2 class="font-semibold mb-4 text-lg">Produksi Pertanian Kabupaten Sekadau Pertahun</h2>
-            <canvas id="produksiPertanianKabupatenSekadauChart" class="max-h-[220px] w-[220px]"></canvas>
+    <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+        <h2 class="font-semibold mb-4 text-lg">Produksi Pertanian Kabupaten Sekadau Pertahun</h2>
+        <canvas id="produksiPertanianKabupatenSekadauChart" class="max-h-[220px] w-[220px]"></canvas>
     </div>
     <!-- Distribusi Lahan -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5] max-w-xl">
+    <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5] max-w-xl">
         <h2 class="font-semibold mb-4 text-lg">Distribusi Kondisi Lahan</h2>
         <div class="flex justify-center">
-        <canvas id="donutLahan" class="w-70 aspect-square"></canvas>
+        <canvas id="donutLahan" class="max-h-[220px] w-[220px]"></canvas>
         </div>
     </div>
 
@@ -317,5 +317,6 @@
         });
 });
 </script>
-    @endpush
+@endpush
+
 @endsection

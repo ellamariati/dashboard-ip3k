@@ -8,7 +8,7 @@
     </header>
 
     <!-- Section Statistik + Search -->
-    <div class="px-1 mt-5 max-w-[1400px] min-w-[945px] mx-auto">
+    <div class="px-1 mt-5 max-w-[1400px] min-w-[945px] mx-auto w-full">
         <!-- Search -->
             <div class="flex justify-between items-center mb-4">
             <div class="relative w-full md:w-60 lg:w-72">
@@ -23,7 +23,7 @@
     <!-- Grid Card -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <!-- Card 1 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
          <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -34,7 +34,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
         <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
         <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -56,7 +56,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="relative bg-[#E3F2FD] p-4 rounded-xl shadow-sm">
+        <div class="relative bg-[#E3F2FD] w-full p-4 rounded-xl shadow-sm">
         <!-- Icon panah -->
         <a href="#" class="absolute top-3 right-3">
         <!-- Heroicons Arrow Top Right -->
@@ -68,10 +68,10 @@
     </div>
 </div>
 
-<h2 class="font-semibold text-lg mb-4 ml-1">Pantau kondisi dan Detail Data Fasilitas Wilayah Anda </h2>
+<h2 class="font-semibold text-lg mb-4 w-full ">Pantau kondisi dan detail data fasilitas wilayah Anda </h2>
 
         <!-- Filter -->
-        <div class="mb-4 ml-1">
+        <div class="mb-4 w-full">
             <button id="dropdownButton" class="w-70 flex items-center justify-between border border-blue-400 px-4 py-2 rounded-lg bg-[#F8FBFF]">
             <!-- Icon kiri -->
             <div class="flex items-center gap-3">
@@ -87,7 +87,7 @@
                 </svg>
             </button>
             <!-- Menu dropdown -->
-            <div id="dropdownMenu" class="hidden absolute left-113 right-0 mt-1 border border-blue-400 rounded-lg bg-white shadow-md max-w-sm w-30">
+            <div id="dropdownMenu" class="hidden absolute left-112 right-0 mt-1 border border-blue-400 rounded-lg bg-white shadow-md max-w-sm w-30">
                 <button class="block w-full text-left px-2 py-2 hover:bg-blue-100">Sekolah</button>
                 <button class="block w-full text-left px-2 py-2 hover:bg-blue-100">Rumah Sakit</button>
                 <button class="block w-full text-left px-2 py-2 hover:bg-blue-100">Ruang Hijau</button>
@@ -106,10 +106,10 @@
             });
         </script>
 
-    <!-- Tabel Data Pertanian -->
-    <div class="bg-white p-6 rounded-xl shadow mb-6 ml-1 border border-[#1E88E5]">
+    <!-- Tabel Data Fasilitas Publik -->
+    <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
-        <svg width="26" height="26" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M7.66536 9.88889C10.6109 9.88889 12.9987 7.89904 12.9987 5.44444C12.9987 2.98985 10.6109 1 7.66536 1C4.71985 1 2.33203 2.98985 2.33203 5.44444C2.33203 7.89904 4.71985 9.88889 7.66536 9.88889Z" fill="#2F88FF" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M31.6654 9.88889C34.6109 9.88889 36.9987 7.89904 36.9987 5.44444C36.9987 2.98985 34.6109 1 31.6654 1C28.7198 1 26.332 2.98985 26.332 5.44444C26.332 7.89904 28.7198 9.88889 31.6654 9.88889Z" fill="#2F88FF" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M1 16.5555H14.3333L11.6667 41H3.66667L1 16.5555Z" fill="#2F88FF" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -181,6 +181,87 @@
                 </tr>
             </tbody>
         </table>
- </div>
+    </div>
 
+    <!-- Jumlah Fasilitas Publik Perjenis -->
+     <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+        <h2 class="font-semibold mb-4 text-lg">Jumlah Fasilitas Publik Perjenis Kabupaten Sekadau</h2>
+        <div class="w-full flex justify-center">
+        <canvas id="jumlahFasilitasPublikPerjenisKabupatenSekadauChart" class="max-h-[380px] w-[380px]"></canvas>
+        </div>
+    </div>
+
+@push('scripts')
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+        // Chart 1 - Batang
+        const ctx1 = document.getElementById('jumlahFasilitasPublikPerjenisKabupatenSekadauChart');
+        new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: ['2020','2021','2022','2023','2024','2025','2026','2027'],
+            datasets: [
+                {
+                    label: 'Sekolah',
+                    data: [1500, 2000, 2600, 3200, 3500, 3800, 4300, 4800],
+                    backgroundColor: '#4CAF50',
+                    barThickness: 15,
+                    borderRadius: 6
+                },
+                {
+                    label: 'Rumah Sakit',
+                    data: [1800, 2100, 2400, 3000, 3400, 3900, 4200, 4600],
+                    backgroundColor: '#F44336',
+                    barThickness: 15,
+                    borderRadius: 6
+                },
+                {
+                    label: 'Ruang Hijau',
+                    data: [1700, 2300, 2900, 3300, 3700, 4300, 4600, 4800],
+                    backgroundColor: '#FF9800',
+                    barThickness: 15,
+                    borderRadius: 6
+                },
+                {
+                    label: 'Jembatan',
+                    data: [1600, 2500, 3000, 3500, 3800, 4200, 4600, 5000],
+                    backgroundColor: '#5BC7E6',
+                    barThickness: 15,
+                    borderRadius: 6
+                },
+                {
+                    label: 'Jalan',
+                    data: [1600, 2500, 3000, 3500, 3800, 4200, 4600, 5000],
+                    backgroundColor: '#FFD400',
+                    barThickness: 15,
+                    borderRadius: 6
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels:{
+                        usePointStyle: true,
+                        pointStyle: "rect",
+                        padding: 12
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+});
+</script>
+@endpush
 @endsection
