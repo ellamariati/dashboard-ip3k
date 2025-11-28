@@ -7,7 +7,7 @@
     </header>
 
     <!-- Section Statistik + Search -->
-    <div class="px-1 mt-5 max-w-[1400px] mx-auto w-full">
+    <div class="px-1 mt-5 max-w-[1400px] min-w-[945px] mx-auto">
     <!-- Search -->
       <div class="flex justify-between items-center mb-4">
       <div class="relative w-full md:w-60 lg:w-72">
@@ -71,12 +71,12 @@
     <!-- BOX Data -->
    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
      <!-- Tren Panjang Jalan -->
-    <div class="bg-[#E3F2FD] w-full p-4 rounded-2xl shadow-lg h-80">
+    <div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6">
         <h2 class="font-semibold mb-4 text-lg">Tren Panjang Jalan</h2>
         <canvas id="trenJalanChart" class="max-h-[220px] w-[220px]"></canvas>
     </div>
     <!--Status Jembatan-->
-    <div class="bg-[#E3F2FD] w-full p-4 rounded-2xl shadow-lg h-80">
+    <div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6">
     <h2 class="font-semibold mb-4 text-lg">Status Jembatan</h2>
         <div class="flex items-start gap-6 h-full justify-end">
             <canvas id="statusJembatanChart" class="max-h-[215px] w-[220px] mr-10"></canvas>
@@ -84,15 +84,15 @@
 </div>
 </div>
     <!-- Hasil Panen-->
-    <div class="bg-[#dff0ff] p-4 rounded-2xl shadow-lg h-80 mt-10">
+    <div class="bg-[#dff0ff] w-full p-6 rounded-xl shadow mb-6 h-80">
     <h2 class="text-lg font-semibold mb-4">Hasil Panen</h2>
     <canvas id="hasilPanenChart" class="max-h-[220px] w-[220px]"></canvas>
 </div>
 
 <!-- DATA BOX BAWAH-->
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-10 w-full">
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 w-full">
     <!-- Daftar Proyek -->
-<div class="bg-[#E3F2FD] w-full p-4 rounded-xl shadow-lg">
+<div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6 h-90">
   <h2 class="text-lg font-semibold mb-4">Daftar Proyek</h2>
 
   <div class="overflow-x-auto">
@@ -135,8 +135,10 @@
   </div>
 </div>
 
-        <div class="bg-[#E3F2FD] w-full p-4 rounded-xl shadow-lg">🗺️ Pemetaan SIG</div>
-    </div>
+
+<!-- Pemetaan SIG -->
+  <div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6 h-90">🗺️ Pemetaan SIG</div>
+  </div>
 
 @push('scripts')
 <script>

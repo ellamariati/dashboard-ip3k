@@ -187,7 +187,7 @@
         <h2 class="font-semibold mb-4 text-lg">Produksi Pertanian Kabupaten Sekadau Pertahun</h2>
         <canvas id="produksiPertanianKabupatenSekadauChart" class="max-h-[220px] w-[220px]"></canvas>
     </div>
-    <!-- Distribusi Lahan -->
+    <!-- Distribusi Kondisi Lahan -->
     <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5] max-w-xl">
         <h2 class="font-semibold mb-4 text-lg">Distribusi Kondisi Lahan</h2>
         <div class="flex items-start gap-6 h-full justify-end">
