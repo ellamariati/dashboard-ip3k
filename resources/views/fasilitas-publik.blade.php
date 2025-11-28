@@ -191,6 +191,24 @@
         </div>
     </div>
 
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+    <!-- Distribusi Kondisi Fasilitas Publik -->
+    <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <h2 class="font-semibold mb-4 text-lg">Distribusi Kondisi Fasilitas Publiki</h2>
+        <div class="flex items-start gap-6 h-full justify-end">
+        <canvas id="donutFasilitasPublik" class="max-h-[220px] w-[220px] mr-10"></canvas>
+        </div>
+    </diV>
+    <!-- Pemetaan Fasilitas Publik Kabupaten Sekadau -->
+    <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <h2 class="font-semibold mb-4 text-lg">Pemetaan Fasilitas Publik Kabupaten Sekadau</h2>
+        <div class="flex items-start gap-6 h-full justify-end">
+        <canvas id="pemetaanFasilitasPublikChart" class="max-h-[220px] w-[220px] mr-10"></canvas>
+        </div>
+    </diV>
+</div>
+
 @push('scripts')
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -205,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 {
                     label: 'Sekolah',
                     data: [1500, 2000, 2600, 3200, 3500, 3800, 4300, 4800],
-                    backgroundColor: '#4CAF50',
+                    backgroundColor: '#FF9800', 
                     barThickness: 15,
                     borderRadius: 6
                 },
@@ -219,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 {
                     label: 'Ruang Hijau',
                     data: [1700, 2300, 2900, 3300, 3700, 4300, 4600, 4800],
-                    backgroundColor: '#FF9800',
+                    backgroundColor: '#4CAF50',
                     barThickness: 15,
                     borderRadius: 6
                 },
@@ -258,6 +276,39 @@ document.addEventListener("DOMContentLoaded", function () {
                     beginAtZero: true
                 }
             }
+        }
+    });
+
+        // Chart 2 - Donut
+        const ctx2 = document.getElementById('donutFasilitasPublik');
+        new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            labels: ['Baik', 'Sedang Diperbaiki', 'Perlu Renovasi'],
+            datasets: [{
+                data: [25, 25, 25],
+                backgroundColor: [
+                    '#DBFADD', // Baik
+                    '#F5BCBF', // Sedang Diperbaiki
+                    '#EEE698'  // Perlu Renovasi
+                ],
+                hoverOffset: 8
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,   // HILANGKAN LEGEND DEFAULT
+                    position: 'right',
+                    labels:{
+                    usePointStyle: true,   // pakai style point (lingkaran)
+                    pointStyle: "circle",  // bentuk bulat
+                    padding: 12            // jarak antar item
+                    }
+                }
+            },
+            cutout: '1%'
         }
     });
 

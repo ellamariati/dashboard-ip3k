@@ -190,8 +190,8 @@
     <!-- Distribusi Lahan -->
     <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5] max-w-xl">
         <h2 class="font-semibold mb-4 text-lg">Distribusi Kondisi Lahan</h2>
-        <div class="flex justify-center">
-        <canvas id="donutLahan" class="max-h-[220px] w-[220px]"></canvas>
+        <div class="flex items-start gap-6 h-full justify-end">
+        <canvas id="donutLahan" class="max-h-[220px] w-[220px] mr-10"></canvas>
         </div>
     </div>
 
