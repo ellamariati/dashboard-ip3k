@@ -8,6 +8,7 @@
     </header>
 
     <div class="px-1 mt-5 max-w-[1400px] min-w-[945px] mx-auto w-full">
+">
     <!-- Deskripsi Pembuka -->
     <p class="text-lg leading-relaxed mb-10">
         <span class="font-bold">Dashboard ini dibuat untuk memantau perkembangan program IP3K 
