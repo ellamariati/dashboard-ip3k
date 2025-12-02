@@ -69,17 +69,17 @@
 </div>
 
     <!-- BOX Data -->
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> 
      <!-- Tren Panjang Jalan -->
     <div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6">
         <h2 class="font-semibold mb-4 text-lg">Tren Panjang Jalan</h2>
-        <canvas id="trenJalanChart" class="max-h-[220px] w-[220px]"></canvas>
+        <canvas id="trenJalanChart" class="max-h-[220px] w-[220px] mr-10"></canvas>
     </div>
     <!--Status Jembatan-->
     <div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6">
     <h2 class="font-semibold mb-4 text-lg">Status Jembatan</h2>
         <div class="flex items-start gap-6 h-full justify-end">
-            <canvas id="statusJembatanChart" class="max-h-[220px] w-[220px] mr-10"></canvas>
+        <canvas id="statusJembatanChart" class="max-h-[220px] w-[220px]"></canvas>
     </div>
 </div>
 </div>
@@ -88,11 +88,10 @@
     <h2 class="text-lg font-semibold mb-4">Hasil Panen</h2>
     <canvas id="hasilPanenChart" class="max-h-[220px] w-[220px]"></canvas>
 </div>
-
-<!-- DATA BOX BAWAH-->
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-6 w-full">
+<!-- DATA BOX BAWAH 
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-6"> -->
     <!-- Daftar Proyek -->
-<div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6 h-90">
+<div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6 h-80">
   <h2 class="text-lg font-semibold mb-4">Daftar Proyek</h2>
 
   <div class="overflow-x-auto">
@@ -137,8 +136,8 @@
 
 
 <!-- Pemetaan SIG -->
-  <div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6 h-90">🗺️ Pemetaan SIG</div>
-  </div>
+  <div class="bg-[#E3F2FD] p-6 rounded-xl shadow mb-6 h-80">🗺️ Pemetaan SIG</div>
+</div>
 
 @push('scripts')
 <script>
