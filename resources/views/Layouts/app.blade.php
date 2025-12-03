@@ -62,7 +62,7 @@
                 <span>Tentang Dashboard</span>
                 </a>
             </nav>
-        </aside>
+    </aside>
 
     <div class="pl-64">
         {{-- Konten utama --}}
