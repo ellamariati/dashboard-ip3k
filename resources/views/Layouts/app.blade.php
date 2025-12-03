@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-100 font-sans antialiased">
-    <div class="flex">
+<div class="flex">
     <!-- Sidebar -->
     <aside class="fixed w-64 bg-blue-900 text-white min-h-screen p-2">
     <div class="flex items-center gap-4 mb-2 mt-4">
@@ -61,17 +61,18 @@
                 </svg>
                 <span>Tentang Dashboard</span>
                 </a>
-
             </nav>
         </aside>
 
-        <div class="pl-64">
+    <div class="pl-64">
         {{-- Konten utama --}}
         <main class="flex-1 p-8">
+        <div class="max-w-[1400px] min-w-[945px] mx-auto w-full">
             @yield('content')
         </main>
+        </div>
     </div>
-    </div>
+</div>
 @stack('scripts')
 </body>
 </html>
