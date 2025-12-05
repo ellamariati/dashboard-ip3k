@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-100 font-sans antialiased">
-<div class="flex">
+<div class="flex flex-col w-full min-h-screen">
     <!-- Sidebar -->
     <aside class="fixed w-64 bg-blue-900 text-white min-h-screen p-2">
     <div class="flex items-center gap-4 mb-2 mt-4">
@@ -64,8 +64,8 @@
             </nav>
     </aside>
 
-    <div class="ml-64">
-    <main class="p-8 max-w-[1400px] mx-auto w-full">
+    <div class="flex w-full">
+    <main class="p-8 w-full ml-64">
         @yield('content')
     </main>
     </div>

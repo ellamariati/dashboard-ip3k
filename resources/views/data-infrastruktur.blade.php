@@ -7,7 +7,7 @@
     </header>
 
 <!-- Section Statistik + Search -->
-<div class="px-1 mt-5 max-w-[1400px] min-w-[945px] mx-auto w-full">
+<div class="px-1 mt-5 mx-auto w-full">
     <!-- Search -->
       <div class="flex justify-between items-center mb-4">
       <div class="relative w-full md:w-60 lg:w-72">
