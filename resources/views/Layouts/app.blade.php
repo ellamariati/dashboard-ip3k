@@ -64,13 +64,10 @@
             </nav>
     </aside>
 
-    <div class="pl-64">
-        {{-- Konten utama --}}
-        <main class="flex-1 p-8">
-        <div class="max-w-[1400px] min-w-[945px] mx-auto w-full">
-            @yield('content')
-        </main>
-        </div>
+    <div class="ml-64">
+    <main class="p-8 max-w-[1400px] mx-auto w-full">
+        @yield('content')
+    </main>
     </div>
 </div>
 @stack('scripts')

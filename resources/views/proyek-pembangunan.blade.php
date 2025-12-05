@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
         data: {
             labels: ['Pendidikan','Kesehatan','Pertanian','Jembatan','Jalan'],
             datasets: [{
-                label: 'Panjang Jalan (KM)',
+                label: 'Jumlah Proyek',
                 data: [10, 20, 40, 50, 30],
                 backgroundColor: [
                         '#FF9800', // Pendidikan
