@@ -67,4 +67,62 @@
         </div>
     </div>
 </div>
+
+<div class="bg-white p-4 rounded-xl shadow mb-6 border border-[#1E88E5]">
+    <h2 class="font-semibold mb-4 text-lg">Peta SIG</h2>
+
+    <!-- Container Peta -->
+    <div id="map" class="w-full rounded-xl" style="height: 500px;"></div>
+</div>
+
 @endsection
+
+@push('scripts')
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    var map = L.map('map').setView([-0.014, 110.907], 10);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // --- Layer Groups ---
+    var layerPertanian = L.layerGroup();
+    var layerKesehatan = L.layerGroup();
+    var layerJembatan  = L.layerGroup();
+
+    // --- Contoh Icons ---
+    var iconPertanian = L.icon({
+    iconUrl: `data:image/svg+xml;utf8,
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="50" height="50" fill="#F7F9FB"/>
+      <path d="M16.5947 1.52872C15.5682 3.15928 ..." fill="#38B000"/>
+    </svg>`,
+    iconSize: [40, 40],   // sesuaikan aja
+    iconAnchor: [20, 40], // titik bawah icon
+    popupAnchor: [0, -40]
+});
+    var iconKesehatan = L.icon({ iconUrl: '/icons/kesehatan.png', iconSize: [30, 30] });
+    var iconJembatan  = L.icon({ iconUrl: '/icons/jembatan.png',  iconSize: [30, 30] });
+
+    // --- Tambah Marker ---
+    L.marker([-0.02, 110.90], { icon: iconPertanian }).bindPopup("Area Pertanian").addTo(layerPertanian);
+    L.marker([-0.03, 110.92], { icon: iconKesehatan }).bindPopup("Fasilitas Kesehatan").addTo(layerKesehatan);
+    L.marker([-0.01, 110.905], { icon: iconJembatan }).bindPopup("Jembatan").addTo(layerJembatan);
+
+    // --- Tambah Semua Layer ---
+    layerPertanian.addTo(map);
+    layerKesehatan.addTo(map);
+    layerJembatan.addTo(map);
+
+    // --- Filter Layer ---
+    L.control.layers(null, {
+        "Area Pertanian": layerPertanian,
+        "Fasilitas Kesehatan": layerKesehatan,
+        "Jembatan": layerJembatan,
+    }, { collapsed: false }).addTo(map);
+</script>
+@endpush
