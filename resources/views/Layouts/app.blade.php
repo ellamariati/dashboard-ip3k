@@ -10,11 +10,11 @@
 <div class="flex flex-col w-full min-h-screen">
     <!-- Sidebar -->
     <aside class="fixed w-64 bg-blue-900 text-white min-h-screen p-2">
-    <div class="flex items-center gap-4 mb-2 mt-4">
+    <div class="flex items-center gap-4 mb-4 mt-4">
     <img src="{{ asset('images/logo-skd.png') }}" alt="Logo Sekadau" class="w-15 ml-3">
     <img src="{{ asset('images/logo-ip3k.png') }}" alt="Logo IP3K" class="w-24">
     </div>
-            <nav class="space-y-2">
+            <nav class="space-y-7">
                 <a href="/" class="flex items-center gap-2 py-2 px-3 rounded hover:bg-blue-700 font-semibold">
                 <svg class="w-5 h-5" width="50" height="50" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.7701 3.58265C21.3803 2.97245 22.3697 2.97245 22.9799 3.58264L41.0826 21.6854C41.6928 22.2956 42.6822 22.2956 43.2924 21.6854C43.9025 21.0752 43.9025 20.0859 43.2924 19.4757L25.1896 1.37294C23.359 -0.457648 20.391 -0.457643 18.5604 1.37294L0.457646 19.4757C-0.152549 20.0859 -0.152549 21.0752 0.457646 21.6854C1.06784 22.2956 2.05716 22.2956 2.66735 21.6854L20.7701 3.58265Z" fill="#F7F9FB"/>
