@@ -228,13 +228,13 @@
                     borderRadius: 6
                 },
                 {
-                    label: 'Sayur & buah',
+                    label: 'buah',
                     data: [1600, 2500, 3000, 3500, 3800, 4200, 4600, 5000],
                     backgroundColor: '#5BC7E6',
                     barThickness: 18,
                     borderRadius: 6
                 }
-            ]
+            ]   
         },
         options: {
             responsive: true,

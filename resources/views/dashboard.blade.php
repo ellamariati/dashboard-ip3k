@@ -144,41 +144,44 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Chart 1 - Batang
+    
+    const dataJalan = [
+      { tahun: '2020', panjang: 852.85 },
+      { tahun: '2021', panjang: 856.50 },
+      { tahun: '2022', panjang: 852.79 }
+    ];
+
     const ctx1 = document.getElementById('trenJalanChart');
+
     new Chart(ctx1, {
-        type: 'bar',
-        data: {
-            labels: ['2020','2021','2022','2023','2024','2025','2026','2027'],
-            datasets: [{
-                label: 'Panjang Jalan (KM)',
-                data: [150, 200, 260, 300, 350, 400, 450, 500],
-                backgroundColor: [
-                '#4CAF50', // 2020
-                '#F44336', // 2021
-                '#FF9800', // 2022
-                '#4CAF50', // 2023
-                '#F44336', // 2024
-                '#FF9800', // 2025
-                '#4CAF50', // 2026
-                '#F44336'  // 2027
-                ],
-                borderRadius: 6,               // rounded bar
-                barThickness: 25               // ketebalan bar
-            }]
+      type: 'bar',
+      data: {
+        labels: dataJalan.map(d => d.tahun),
+        datasets: [{
+          label: 'Panjang Jalan (KM)',
+          data: dataJalan.map(d => d.panjang),
+          backgroundColor: [
+            '#4CAF50', // 2020
+            '#F44336', // 2021
+            '#FF9800'  // 2022
+          ],
+          borderRadius: 6,
+          barThickness: 25
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: { beginAtZero: true }
         },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: { beginAtZero: true }
-            },
-            plugins: {
-                legend: {
-                    display: false   // sembunyikan legend
-                }
-            }
+        plugins: {
+          legend: {
+            display: false
+          }
         }
-    });
+      }
+});
 
 // Chart 2 - Donut
 const ctx2 = document.getElementById('statusJembatanChart');
