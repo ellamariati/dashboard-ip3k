@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PerumahanController;
 
 // Route Dashboard
 Route::get('/', function () {
@@ -8,9 +9,8 @@ Route::get('/', function () {
 });
 
 // Route Data Infrastruktur
-Route::get('/data-infrastruktur', function () {
-    return view('data-infrastruktur');
-})->name('data.infrastruktur');
+Route::get('/data-infrastruktur', [PerumahanController::class, 'index'])
+->name('data.infrastruktur');
 
 // Route Data Pertanian
 Route::get('/data-pertanian', function () {
@@ -36,3 +36,5 @@ Route::get('/proyek-pembangunan', function () {
 Route::get('/tentang-dashboard', function () {
     return view('tentang-dashboard'); 
 })->name('tentang.dashboard');
+
+

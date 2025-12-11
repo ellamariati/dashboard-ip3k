@@ -304,50 +304,39 @@
             <h3 class="font-semibold">Perumahan & Lingkungan</h3>
         </div>
 
-         <table class="w-full text-sm">
-            <thead class="text-left border-b border-[#1E88E5]">
-                <tr>
-                    <th class="py-2">Nama Infrastruktur</th>
-                    <th>Lokasi</th>
-                    <th>Jenis Infrastruktur</th>
-                    <th>Tahun Pembangunan</th>
-                    <th>Kondisi</th>
-                </tr>
-            </thead>
+          <table class="w-full text-sm">
+    <thead class="text-left border-b border-[#1E88E5]">
+        <tr>
+            <th class="py-2">Nama Infrastruktur</th>
+            <th>Lokasi</th>
+            <th>Jenis Infrastruktur</th>
+            <th>Tahun Pembangunan</th>
+            <th>Kondisi</th>
+        </tr>
+    </thead>
 
-            <tbody>
-                <tr class="border-b border-[#1E88E5]">
-                    <td class="py-2">Perumahan Griya Indah</td>
-                    <td>Nanga Mahap</td>
-                    <td>Perumahan</td>
-                    <td>2021</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Selesai Dibangun</span></td>
-                </tr>
+    <tbody>
+        @foreach ($mapped as $item)
+            @php
+                $bgClass = match ($item['status']) {
+                    'Sudah Terhuni' => 'bg-[#DBFADD] text-[#38B000]',
+                    'Proses Pembangunan' => 'bg-yellow-200 text-[#FF9800]',
+                    default => 'bg-gray-200 text-gray-700',
+                };
+            @endphp
 
-                <tr class="border-b border-[#1E88E5]">
-                    <td class="py-2">Rusunawa Sungai Ayak</td>
-                    <td>Nanga Taman</td>
-                    <td>Hunian Vertikal</td>
-                    <td>2022</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">Sedang Dibangun</span></td>
-                    </tr>
-
-                <tr class="border-b border-[#1E88E5]">
-                    <td class="py-2">Perumahan Cintra Asri</td>
-                    <td>Sekadau Hulu</td>
-                    <td>Perumahan</td>
-                    <td>2023</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">Baik</span></td>
-                </tr>
-
-                <tr class="border-b border-[#1E88E5]">
-                    <td class="py-2">TPA Sekadau Kota</td>
-                    <td>Sekadau Hilir</td>
-                    <td>Pengelolaan Sampah</td>
-                    <td>2024</td>
-                    <td><span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">Penuh</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            <tr class="border-b border-[#1E88E5]">
+                <td class="py-2">{{ $item['nama'] }}</td>
+                <td>{{ $item['lokasi'] }}</td>
+                <td>{{ $item['jenis'] }}</td>
+                <td>{{ $item['tahun'] }}</td>
+                <td>
+                    <span class="inline-block w-36 text-center py-1 text-xs rounded-lg font-semibold {{ $bgClass }}">
+                        {{ $item['status'] }}
+                    </span>
+                </td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
 @endsection
