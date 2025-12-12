@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PerumahanController;
+use App\Http\Controllers\InfrastructureController;
 
 // Route Dashboard
 Route::get('/', function () {
@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 
 // Route Data Infrastruktur
-Route::get('/data-infrastruktur', [PerumahanController::class, 'index'])
+Route::get('/data-infrastruktur', [InfrastructureController::class, 'telekomunikasi'])
 ->name('data.infrastruktur');
 
 // Route Data Pertanian

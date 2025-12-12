@@ -121,10 +121,10 @@
             
             <thead class="text-left border-b border-[#1E88E5]">
                 <tr>
-                    <th class="py-2">Nama Infrastruktur</th>
+                    <th class="py-2">Nama Lahan/Komoditas</th>
                     <th>Lokasi</th>
-                    <th>Jenis Infrastruktur</th>
-                    <th>Tahun Pembangunan</th>
+                    <th>Jenis Pertanian</th>
+                    <th>Tahun Tanam/th>
                     <th>Kondisi</th>
                 </tr>
             </thead>
@@ -132,49 +132,49 @@
             <tbody class="divide-y">
 
                 <tr>
-                    <td class="py-2">Jalan Nasional 1</td>
-                    <td>Sekadau Hilir</td>
-                    <td>Jalan Raya</td>
+                    <td class="py-2">Sawah Sungai Ayak</td>
+                    <td>Nanga Taman</td>
+                    <td>Padi</td>
                     <td>2021</td>
                     <td>
-                        <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">
-                            Baik
+                        <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#AAF5EF] text-[#00D3FF] font-semibold">
+                            Panen Raya
                         </span>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="py-2">Jembatan Sungai Kapuas</td>
+                    <td class="py-2">Kebun Kelapa Sawit Bina</td>
                     <td>Sekadau Hilir</td>
-                    <td>Jembatan Baja</td>
+                    <td>Perkebunan</td>
                     <td>2022</td>
                     <td>
                         <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#F9AEB0] text-[#F44336] font-semibold">
-                            Perlu Perbaikan
+                            Kurang Produktif
                         </span>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="py-2">Jalan Desa Sungai Durian</td>
-                    <td>Nanga Taman</td>
-                    <td>Jalan Desa</td>
+                    <td class="py-2">Kebun Karet Sungai Kase</td>
+                    <td>Sekadau Hulu</td>
+                    <td>Perkebunan</td>
                     <td>2023</td>
                     <td>
                         <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-[#DBFADD] text-[#38B000] font-semibold">
-                            Baik
+                            Produktif
                         </span>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="py-2">Jembatan Sekadau-Sintang</td>
+                    <td class="py-2">Hortukultura Rawak</td>
                     <td>Nanga Mahap</td>
                     <td>Jembatan Gantung</td>
                     <td>2024</td>
                     <td>
                         <span class="inline-block w-36 text-center py-1 text-xs rounded-lg bg-yellow-200 text-[#FF9800] font-semibold">
-                            Sedang Diperbaiki
+                            Sedang Berkembang
                         </span>
                     </td>
                 </tr>

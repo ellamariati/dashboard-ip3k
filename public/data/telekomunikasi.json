@@ -1,0 +1,106 @@
+[
+    {
+        "nama": "Menara BTS - Kecamatan Nanga Mahap",
+        "lokasi": "Nanga Mahap",
+        "jenis": "Menara BTS",
+        "tahun": "2022",
+        "satuan": "16 Unit"
+    },
+    {
+        "nama": "Menara BTS - Kecamatan Nanga Mahap",
+        "lokasi": "Nanga Mahap",
+        "jenis": "Menara BTS",
+        "tahun": "2023",
+        "satuan": "16 Unit"
+    },
+
+    {
+        "nama": "Menara BTS - Kecamatan Nanga Taman",
+        "lokasi": "Nanga Taman",
+        "jenis": "Menara BTS",
+        "tahun": "2022",
+        "satuan": "13 Unit"
+    },
+    {
+        "nama": "Menara BTS - Kecamatan Nanga Taman",
+        "lokasi": "Nanga Taman",
+        "jenis": "Menara BTS",
+        "tahun": "2023",
+        "satuan": "13 Unit"
+    },
+
+    {
+        "nama": "Menara BTS - Kecamatan Sekadau Hulu",
+        "lokasi": "Sekadau Hulu",
+        "jenis": "Menara BTS",
+        "tahun": "2022",
+        "satuan": "13 Unit"
+    },
+    {
+        "nama": "Menara BTS - Kecamatan Sekadau Hulu",
+        "lokasi": "Sekadau Hulu",
+        "jenis": "Menara BTS",
+        "tahun": "2023",
+        "satuan": "13 Unit"
+    },
+
+    {
+        "nama": "Menara BTS - Kecamatan Sekadau Hilir",
+        "lokasi": "Sekadau Hilir",
+        "jenis": "Menara BTS",
+        "tahun": "2022",
+        "satuan": "47 Unit"
+    },
+    {
+        "nama": "Menara BTS - Kecamatan Sekadau Hilir",
+        "lokasi": "Sekadau Hilir",
+        "jenis": "Menara BTS",
+        "tahun": "2023",
+        "satuan": "48 Unit"
+    },
+
+    {
+        "nama": "Menara BTS - Kecamatan Belitang Hilir",
+        "lokasi": "Belitang Hilir",
+        "jenis": "Menara BTS",
+        "tahun": "2022",
+        "satuan": "9 Unit"
+    },
+    {
+        "nama": "Menara BTS - Kecamatan Belitang Hilir",
+        "lokasi": "Belitang Hilir",
+        "jenis": "Menara BTS",
+        "tahun": "2023",
+        "satuan": "9 Unit"
+    },
+
+    {
+        "nama": "Menara BTS - Kecamatan Belitang",
+        "lokasi": "Belitang",
+        "jenis": "Menara BTS",
+        "tahun": "2022",
+        "satuan": "11 Unit"
+    },
+    {
+        "nama": "Menara BTS - Kecamatan Belitang",
+        "lokasi": "Belitang",
+        "jenis": "Menara BTS",
+        "tahun": "2023",
+        "satuan": "11 Unit"
+    },
+
+    {
+        "nama": "Menara BTS - Kecamatan Belitang Hulu",
+        "lokasi": "Belitang Hulu",
+        "jenis": "Menara BTS",
+        "tahun": "2022",
+        "satuan": "15 Unit"
+    },
+    {
+        "nama": "Menara BTS - Kecamatan Belitang Hulu",
+        "lokasi": "Belitang Hulu",
+        "jenis": "Menara BTS",
+        "tahun": "2023",
+        "satuan": "15 Unit"
+    }
+]
