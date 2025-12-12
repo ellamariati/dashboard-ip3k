@@ -7,46 +7,26 @@ use Illuminate\Support\Facades\File;
 
 class InfrastructureController extends Controller
 {
-    public function index()
-{
-    $json = File::get(public_path('data/perumahan.json'));
-    $data = json_decode($json, true);
-
-    $mapped = collect($data)->map(function ($row) {
-        return [
-            'nama' => $row['nama'],
-            'lokasi' => $row['lokasi'],
-            'jenis' => $row['jenis'],
-            'tahun' => $row['tahun'],
-            'status' => $row['status'],
+    public function telekomunikasi()
+    {
+        // === DATA TELEKOMUNIKASI (CHART) ===
+        $labels = [
+            "Nanga Mahap",
+            "Nanga Taman",
+            "Sekadau Hulu",
+            "Sekadau Hilir",
+            "Belitang Hilir",
+            "Belitang",
+            "Belitang Hulu"
         ];
-    });
 
-    return view('data-infrastruktur', compact('mapped'));
-}
-public function telekomunikasi()
-{
-    $json = File::get(public_path('data/telekomunikasi.json'));
-    $telekomunikasi = json_decode($json, true);
+        $data2022 = [16, 13, 13, 47, 9, 11, 15];
+        $data2023 = [16, 13, 13, 48, 9, 11, 15];
 
-    $perumahan = $this->getPerumahan();
-    $mapped = collect($perumahan)->map(function ($row) {
-        return [
-            'nama' => $row['nama'],
-            'lokasi' => $row['lokasi'],
-            'jenis' => $row['jenis'],
-            'tahun' => $row['tahun'],
-            'status' => $row['status'],
-        ];
-    });
+        // === DATA PERUMAHAN (load dari JSON) ===
+        $json = File::get(public_path('data/perumahan.json'));
+        $perumahan = json_decode($json, true);
 
-    return view('data-infrastruktur', compact('telekomunikasi', 'mapped', 'perumahan'));
-}
-
-private function getPerumahan()
-{
-    $json = File::get(public_path('data/perumahan.json'));
-    return json_decode($json, true);
-}
-
+        return view('data-infrastruktur', compact('labels', 'data2022', 'data2023', 'perumahan'));
+    }
 }

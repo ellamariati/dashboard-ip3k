@@ -88,8 +88,8 @@
     <h2 class="text-lg font-semibold mb-4">Hasil Panen</h2>
     <canvas id="hasilPanenChart" class="max-h-[220px] w-[220px]"></canvas>
 </div>
-<!-- DATA BOX BAWAH 
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-6"> -->
+
+
     <!-- Daftar Proyek -->
 <div class="bg-[#E3F2FD] w-full p-6 rounded-xl shadow mb-6 h-80">
   <h2 class="text-lg font-semibold mb-4">Daftar Proyek</h2>
@@ -136,7 +136,7 @@
 
 
 <!-- Pemetaan SIG -->
-  <div class="bg-[#E3F2FD] p-6 rounded-xl shadow mb-6 h-80">🗺️ Pemetaan SIG</div>
+<div class="bg-[#E3F2FD] p-6 rounded-xl shadow mb-6 h-80">🗺️ Pemetaan SIG</div>
 </div>
 
 @push('scripts')
