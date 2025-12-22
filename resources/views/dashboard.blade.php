@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
             '#FF9800'  // 2022
           ],
           borderRadius: 6,
-          barThickness: 25
+          barThickness: 30
         }]
       },
       options: {

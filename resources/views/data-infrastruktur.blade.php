@@ -70,7 +70,7 @@
 
 <h2 class="font-semibold text-lg mb-4 w-full">Pantau kondisi dan detail data infrastruktur wilayah Anda</h2>
 
-<!-- ================= SECTION 1 TRANSPORTASI ================= -->
+<!-- SECTION 1 TRANSPORTASI -->
     <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +127,7 @@
 
     </div>
 
-<!-- ================= SECTION 2 ENERGI & UTILITAS ================= -->
+<!-- SECTION 2 ENERGI & UTILITAS -->
     <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
          <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +183,7 @@
             </table>
     </div>
 
-<!-- ================= SECTION 3 TELEKOMUNIKASI ================= -->
+<!-- SECTION 3 TELEKOMUNIKASI -->
  <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,39 +193,31 @@
             <h3 class="font-semibold">Telekomunikasi</h3>
         </div>
   <canvas id="btsChart" height="120"></canvas>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </div>
-<script>
-    const ctx = document.getElementById('btsChart').getContext('2d');
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    const chartContext = document.getElementById('btsChart').getContext('2d');
 
-    const labels = [
-        "Nanga Mahap",
-        "Nanga Taman",
-        "Sekadau Hulu",
-        "Sekadau Hilir",
-        "Belitang Hilir",
-        "Belitang",
-        "Belitang Hulu"
-    ];
+    const districtLabels = @json($districtLabels);
+    const telecommunicationData2022 = @json($telecommunicationData2022);
+    const telecommunicationData2023 = @json($telecommunicationData2023);
 
-    const data2022 = [16, 13, 13, 47, 9, 11, 15];
-    const data2023 = [16, 13, 13, 48, 9, 11, 15];
-
-    new Chart(ctx, {
+    new Chart(chartContext, {
         type: 'bar',
         data: {
-            labels: labels,
+            labels: districtLabels,
             datasets: [
                 {
                     label: "Tahun 2022",
-                    data: data2022,
-                    backgroundColor: "#4CAF50"
+                    data: telecommunicationData2022,
+                    backgroundColor: "#4CAF50",
+                    barThickness: 50
                 },
                 {
                     label: "Tahun 2023",
-                    data: data2023,
-                    backgroundColor: "#FF9800"
+                    data: telecommunicationData2023,
+                    backgroundColor: "#FF9800",
+                    barThickness: 50
                 }
             ]
         },
@@ -233,7 +225,6 @@
             responsive: true,
             scales: {
                 x: {
-                    stacked: false,
                     ticks: {
                         maxRotation: 0,
                         minRotation: 0
@@ -249,12 +240,10 @@
             }
         }
     });
-
 </script>
 
 
-
-<!-- ================= SECTION 4 PERUMAHAN & LINGKUNGAN ================= -->
+<!-- SECTION 4 PERUMAHAN & LINGKUNGAN -->
     <div class="bg-white w-full p-6 rounded-xl shadow mb-6 border border-[#1E88E5]">
         <div class="flex items-center gap-2 mb-3 font-semibold">
         <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -318,40 +307,39 @@
             <h3 class="font-semibold">Perumahan & Lingkungan</h3>
         </div>
 
-          <table class="w-full text-sm">
-    <thead class="text-left border-b border-[#1E88E5]">
-        <tr>
-            <th class="py-2 w-1/4">Nama Infrastruktur</th>
-            <th class="w-1/5">Lokasi</th>
-            <th class="w-1/5">Jenis Infrastruktur</th>
-            <th class="w-1/5">Tahun Pembangunan</th>
-            <th class="w-1/5">Kondisi</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach ($perumahan as $item)
-            @php
-                $bgClass = match ($item['status']) {
-                    'Sudah Terhuni' => 'bg-[#DBFADD] text-[#38B000]',
-                    'Proses Pembangunan' => 'bg-yellow-200 text-[#FF9800]',
-                    default => 'bg-gray-200 text-gray-700',
-                };
-            @endphp
-
-            <tr class="border-b border-[#1E88E5]">
-                <td class="py-2">{{ $item['nama'] }}</td>
-                <td>{{ $item['lokasi'] }}</td>
-                <td>{{ $item['jenis'] }}</td>
-                <td>{{ $item['tahun'] }}</td>
-                <td>
-                    <span class="inline-block w-36 text-center py-1 text-xs rounded-lg font-semibold {{ $bgClass }}">
-                        {{ $item['status'] }}
-                    </span>
-                </td>
+     <table class="w-full text-sm">
+        <thead class="text-left border-b border-[#1E88E5]">
+            <tr>
+                <th class="py-2 w-1/4">Nama Infrastruktur</th>
+                <th class="w-1/5">Lokasi</th>
+                <th class="w-1/5">Jenis Infrastruktur</th>
+                <th class="w-1/5">Tahun Pembangunan</th>
+                <th class="w-1/5">Kondisi</th>
             </tr>
-        @endforeach
-    </tbody>
-</table>
+        </thead>
 
+        <tbody>
+            @foreach ($housingData as $housingItem)
+                @php
+                    $statusClass = match ($housingItem['status']) {
+                        'Sudah Terhuni' => 'bg-[#DBFADD] text-[#38B000]',
+                        'Proses Pembangunan' => 'bg-yellow-200 text-[#FF9800]',
+                        default => 'bg-gray-200 text-gray-700',
+                    };
+                @endphp
+
+                <tr class="border-b border-[#1E88E5]">
+                    <td class="py-2">{{ $housingItem['name'] }}</td>
+                    <td>{{ $housingItem['location'] }}</td>
+                    <td>{{ $housingItem['type'] }}</td>
+                    <td>{{ $housingItem['year'] }}</td>
+                    <td>
+                        <span class="inline-block w-36 text-center py-1 text-xs rounded-lg font-semibold {{ $statusClass }}">
+                            {{ $housingItem['status'] }}
+                        </span>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
 @endsection

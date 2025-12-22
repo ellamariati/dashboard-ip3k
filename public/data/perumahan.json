@@ -1,128 +1,128 @@
 [
-    {
-        "nama": "Vila Astro Griya Mandiri",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Mega Permata",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Mega Permata II",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Adyaksa Resident",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Proses Pembangunan"
-    },
-    {
-        "nama": "Vila Sekadau Indah",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "BTN Graha Kirana",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Perumahan Raja Tuah",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Astro Mandiri Residence",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "2020",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Mega Permata Permai",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "2022",
-        "status": "Proses Pembangunan"
-    },
-    {
-        "nama": "Victoria Residence",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "2021",
-        "status": "Proses Pembangunan"
-    },
-    {
-        "nama": "Astro Mandiri Residence II",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "2021",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Astro Mandiri Residence III",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "2023",
-        "status": "Proses Pembangunan"
-    },
-    {
-        "nama": "Perumahan Jalan Abdurahman I",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Perumahan Jalan Abdurahman II",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Perumahan Jalan Abadi",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Perumahan Jalan Harapan",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Sudah Terhuni"
-    },
-    {
-        "nama": "Kota Baru Residence",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Proses Pembangunan"
-    },
-    {
-        "nama": "Perumahan Jiwa Properti Residence",
-        "lokasi": "-Tidak Tersedia-",
-        "jenis": "Tapak",
-        "tahun": "-",
-        "status": "Proses Pembangunan"
-    }
+  {
+    "name": "Vila Astro Griya Mandiri",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Mega Permata",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Mega Permata II",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Adyaksa Resident",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Proses Pembangunan"
+  },
+  {
+    "name": "Vila Sekadau Indah",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "BTN Graha Kirana",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Perumahan Raja Tuah",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Astro Mandiri Residence",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "2020",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Mega Permata Permai",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "2022",
+    "status": "Proses Pembangunan"
+  },
+  {
+    "name": "Victoria Residence",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "2021",
+    "status": "Proses Pembangunan"
+  },
+  {
+    "name": "Astro Mandiri Residence II",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "2021",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Astro Mandiri Residence III",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "2023",
+    "status": "Proses Pembangunan"
+  },
+  {
+    "name": "Perumahan Jalan Abdurahman I",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Perumahan Jalan Abdurahman II",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Perumahan Jalan Abadi",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Perumahan Jalan Harapan",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Sudah Terhuni"
+  },
+  {
+    "name": "Kota Baru Residence",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Proses Pembangunan"
+  },
+  {
+    "name": "Perumahan Jiwa Properti Residence",
+    "location": "-Tidak Tersedia-",
+    "type": "Tapak",
+    "year": "-",
+    "status": "Proses Pembangunan"
+  }
 ]

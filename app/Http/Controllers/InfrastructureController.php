@@ -7,10 +7,10 @@ use Illuminate\Support\Facades\File;
 
 class InfrastructureController extends Controller
 {
-    public function telekomunikasi()
+    public function telecommunication()
     {
-        // === DATA TELEKOMUNIKASI (CHART) ===
-        $labels = [
+        // === Telecommunication Data (CHART) ===
+        $districtLabels = [
             "Nanga Mahap",
             "Nanga Taman",
             "Sekadau Hulu",
@@ -20,13 +20,17 @@ class InfrastructureController extends Controller
             "Belitang Hulu"
         ];
 
-        $data2022 = [16, 13, 13, 47, 9, 11, 15];
-        $data2023 = [16, 13, 13, 48, 9, 11, 15];
+        $telecommunicationData2022 = [16, 13, 13, 47, 9, 11, 15];
+        $telecommunicationData2023 = [16, 13, 13, 48, 9, 11, 15];
 
-        // === DATA PERUMAHAN (load dari JSON) ===
-        $json = File::get(public_path('data/perumahan.json'));
-        $perumahan = json_decode($json, true);
+        // === Housing Data (load from JSON) ===
+        $housingjson = File::get(public_path('data/perumahan.json'));
+        $housingData = json_decode($housingjson, true);
 
-        return view('data-infrastruktur', compact('labels', 'data2022', 'data2023', 'perumahan'));
+        return view('data-infrastruktur', compact(
+            'districtLabels',
+            'telecommunicationData2022',
+            'telecommunicationData2023',
+            'housingData'));
     }
 }

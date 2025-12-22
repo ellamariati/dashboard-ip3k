@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfrastructureController;
+use App\Http\Controllers\AgricultureController;
 
 // Route Dashboard
 Route::get('/', function () {
@@ -9,13 +10,12 @@ Route::get('/', function () {
 });
 
 // Route Data Infrastruktur
-Route::get('/data-infrastruktur', [InfrastructureController::class, 'telekomunikasi'])
-->name('data.infrastruktur');
+Route::get('/data-infrastruktur', [InfrastructureController::class, 'telecommunication'])
+    ->name('data.infrastruktur');
 
 // Route Data Pertanian
-Route::get('/data-pertanian', function () {
-    return view('data-pertanian'); 
-})->name('data.pertanian');
+Route::get('/data-pertanian', [AgricultureController::class, 'index'])
+    ->name('data.pertanian');
 
 // Route Fasilitas Publik
 Route::get('/fasilitas-publik', function () {
